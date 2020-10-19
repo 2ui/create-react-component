@@ -1,6 +1,6 @@
 {
   "name": "@2ui/create-react-component",
-  "version": "5.1.0",
+  "version": "5.2.0",
   "description": "A simple React CLI to generate components instantly and more.",
   "repository": "https://github.com/ryanatk/create-react-component",
   "bugs": "https://github.com/ryanatk/create-react-component/issues",
