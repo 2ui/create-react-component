@@ -1,10 +1,10 @@
 {
-  "name": "generate-react-cli",
+  "name": "@2ui/create-react-component",
   "version": "5.1.0",
   "description": "A simple React CLI to generate components instantly and more.",
-  "repository": "https://github.com/arminbro/generate-react-cli",
-  "bugs": "https://github.com/arminbro/generate-react-cli/issues",
-  "author": "Armin Broubakarian",
+  "repository": "https://github.com/ryanatk/create-react-component",
+  "bugs": "https://github.com/ryanatk/create-react-component/issues",
+  "author": "Ryan Atkinson",
   "license": "MIT",
   "main": "bin/generate-react",
   "bin": {
@@ -25,7 +25,8 @@
     "cli",
     "react",
     "build-tools",
-    "generate-react-cli"
+    "generate-react-cli",
+    "create-react-component"
   ],
   "engines": {
     "node": ">=10.x",
@@ -60,8 +61,8 @@
     "@commitlint/config-conventional": "^11.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.9.0",
-    "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-prettier": "^6.11.0",
+    "eslint-config-react-app": "^5.2.1",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-prettier": "^3.1.4",
@@ -109,9 +110,6 @@
     ]
   },
   "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
+    "hooks": {}
   }
 }
