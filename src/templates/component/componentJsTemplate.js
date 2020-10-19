@@ -1,14 +1,17 @@
 module.exports = `import React from 'react';
-import PropTypes from 'prop-types';
-import styles from './TemplateName.module.css';
+import {any, bool, string} from 'prop-types';
 
-const TemplateName = () => (
-  <div className={styles.TemplateName} data-testid="TemplateName">
+import styles from './TemplateName.scoped.css';
+
+const TemplateName = ({ children }) => (
+  <div className=TemplateName data-testid="TemplateName">
     TemplateName Component
   </div>
 );
 
-TemplateName.propTypes = {};
+TemplateName.propTypes = {
+  children: any,
+};
 
 TemplateName.defaultProps = {};
 
